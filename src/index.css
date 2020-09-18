@@ -1,13 +1,240 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+.search {
+    width: 36%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input.form-control {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 10px;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+/* style icon */
+.inner-addon .fa-search {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  color: #848484;
+}
+
+/* align icon */
+.left-addon .fa-search  { left:  0px;}
+.right-addon .fa-search { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.user img{
+  border-radius: 50%;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.55);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.col-9{
+  min-height: 500px;
+}
+.sidenav {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  background: #eee;
+  overflow: hidden;
+  height: 100vh;
+  top: 8%;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.sidenav h2{
+  color: #5c5757;
+}
+
+.order .card {
+  background-color: #6455c2;
+  color: white;
+  border-radius: 18px;
+}
+
+.card .name, .card .card-number{
+  font-weight: 300;
+}
+
+.card .card-number{
+  font-size: 14px;
+  letter-spacing: 2.2px;
+}
+
+.card .saldo{
+  font-weight: 500;
+}
+
+.header.wrapper{
+  padding-left: 90px !important;
+  background-color: #FFF7ED;
+}
+
+.header.wrapper  .content{
+  align-self: flex-end;
+}
+
+.header.wrapper  .title, .header.wrapper .subtitle{
+  color: #FB7140;
+}
+
+.wrapper-category .col-3{
+  position: relative;
+}
+
+.wrapper-category .col-3 img{
+  border-radius: 18px;
+  filter: brightness(50%);
+  width: 100%;
+  height: 150px;
+}
+
+.wrapper-category .col-3 p {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper-popular .card{
+  height: 284px;
+  border-radius: 24px;
+}
+
+.wrapper-img-popular{
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  height: 258px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper-img-popular .img-popular{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#rating {
+    margin-bottom: 10px;
+}
+#rating span.text{
+    font-size: 14px;
+    color: #515454;
+}
+
+#rating .star{
+    font-size: 16px;
+    display: inline-block;
+    font-family: Times;
+    line-height: 1;
+    letter-spacing: 3px;
+    -webkit-background-clip: text;
+}
+
+#rating .star.active{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+p.time {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    left: 7px;
+}
+
+.a-popular{
+  text-decoration: none;
+  color: initial;
+  transition: .3s;
+}
+
+.a-popular:hover{
+  color: #6455C2;
+}
+
+.btn-orange{
+  background-color: #FB7140;
+  color: white;
+  transition: .3s;
+}
+
+.img-modal{
+  width: 90%;
+}
+
+.number {
+  width: 32px;
+  border: 1px solid #c3c3c3;
+  margin: 0 12px;
+}
+
+.btn-orange:hover{
+  background-color: #e46537;
+  color: white;
+}
+
+.wrapper-btn button {
+  background-color: #FCD561;
+}
+
+.wrapper-btn button:hover {
+  background-color: #e6c154;
+}
+
+.calculate img{
+  border-radius: 14px;
+}
+
+.calculate .wrapper {
+  width: 80px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  color: #636363;
+}
+
+.total-rp{
+  font-size: 20px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
